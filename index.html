@@ -12,6 +12,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> 
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
     <!-- Custom styles for this template -->
     <link href="assets/css/style.css" rel="stylesheet">
     <!-- ADBANNER -->
@@ -23,7 +25,6 @@
 <body class="index-page">
   <header id="header" class="header dark-background d-flex flex-column">
     <i class="header-toggle d-xl-none bi bi-list"></i>
-
     <a href="index.html" class="logo d-flex align-items-center justify-content-center pt-4">
       <h1 class="sitename">Maximilian Rakicki</h1>
     </a>
@@ -32,8 +33,22 @@
       <ul>
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i>Über Mich</a></li>
+		<li><a href="#skills"><i class="bi-bar-chart-steps navicon"></i>Skills</a></li>
         <li><a href="#portfolio"><i class="bi bi-images navicon"></i>Portfolio</a></li>
-        <li><a href="#contact"><i class="bi bi-images navicon"></i>Kontakt</a></li>
+		<li>
+		  <a href="tel:+437669104478">
+			<button type="button" class="btn btn-light phone-btn">
+			  <i class="bi bi-telephone-fill navicon"></i> Telefon
+			</button>
+		  </a>
+		</li>
+		<li>
+		  <a href="mailto:maximilian.rakicki@gmail.com">
+			<button type="button" class="btn btn-light email-btn">
+			  <i class="bi bi-envelope-fill navicon"></i> Email
+			</button>
+		  </a>
+		</li>
       </ul>
     </nav>
 
@@ -42,14 +57,17 @@
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
+    <section id="hero" class="hero section dark-background bg-pan-top">
 
-      <img src="assets/images/header/Grimming_panorama.jpg" alt="" data-aos="fade-in" class="">
+     <!-- <img src="assets/images/header/Grimming_panorama.jpg" alt="" data-aos="fade-in" class=""> -->
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <h2>Maximilian Silvester Rakicki</h2>
-        <p>Medienfachmann</p>
+      <div class="container col-lg-9" data-aos="fade-up" data-aos-delay="100">
+        <h2>Maximilian Silvester <br> RAKICKI</h2>
+		<p>Medienfachmann</p>
       </div>
+	  <div class="col-lg-3 rotate flex-end">
+	  <p>IMMER IN BEWEGUNG</p>
+	  </div>
 
     </section><!-- /Hero Section -->
 
@@ -59,105 +77,139 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Über Mich</h2>
-        <p>Mein Name ist Maximilian Rakicki aber die meisten nennen mich einfach nur Max. Ich bin 24 Jahre alt und seit meiner Kindheit interessiere ich mich für Technik, Hardware und das Internet. Dadurch war es naheliegend, dass ich irgendwann einmal in diesem Sektor lande.</p>
+        <p>Mein Name ist Maximilian Rakicki, für die meisten bin ich aber einfach nur Max. Ich bin 24 Jahre alt und seit meiner Kindheit interessiere ich mich für Technik, Hardware und das Internet.
+		Geboren und aufgewachsen bin ich im wunderschönen Ennstal, dort habe ich auch den großteils meines bisherigen Lebens verbracht.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-4 justify-content-center">
-          <div class="col-lg-4">
+          <div class="col-lg-3">
             <img src="assets/images/portrait/FotoMe.jpg" class="img-fluid shadow" alt="">
+			<!--<img src="assets/images/portrait/FotoMe.jpg" class="hexagon">-->
           </div>
-          <div class="col-lg-8 content">
+          <div class="col-lg-9 content">
             <h2>Medienfachmann - SB WEBDEVELOPMENT</h2>
             <p class="fst-italic py-3">
-              Im Juli 2024 absolvierte ich mit Auszeichnung meine Lehre als Medienfachmann mit Schwerpunkt SB Webdevolopment.
+              Im Juli 2024 absolvierte ich mit Auszeichnung meine Lehre als Medienfachmann mit Schwerpunkt SB Webdevelopment.
             </p>
             <div class="row">
               <div class="col-lg-12">
                 <ul>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Geburtstag:</strong> <span>8. September 2000</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Geburtstag:</strong> <span>8. September 2000 in Rottenmann</span></li>
                     <li><i class="bi bi-chevron-right"></i> <strong>Wohnort:</strong> <span>Ederstraße 6, 4020 Linz</span></li>
                     <li><i class="bi bi-chevron-right"></i> <strong>Hobbys:</strong> <span>skateboarden, gaming, Motorrad fahren</span></li>
-                </ul><br>
+                </ul>
               </div>
             <p class="py-3">
-              Im Webdesign fühle ich mich zu Hause, da ich meiner Kreativität freien Lauf lassen kann. Ich schätze die sich immer ändernden Anforderungen von Projekten, die kreativen Spielraum lassen. <br> In meiner Freizeit verbringe ich gerne Zeit draußen beim Skateboarden oder bei Schlechtwetter auch hinter meinem Rechner. Das Skateboarden ist eine meiner Leidenschaften, weswegen ich in Liezen einen Verein zur Förderung des Sports gegründet habe. Ich habe für 1 Jahr den Verein als Obmann geführt. Vor meinem Umzug habe ich die Position schlussendlich übergeben.
+              Im Webdesign fühle ich mich zu Hause, da ich meiner Kreativität freien Lauf lassen kann. Ich schätze die sich immer ändernden Anforderungen von Projekten, die kreativen Spielraum lassen. <br> 
+			  In meiner Freizeit verbringe ich gerne Zeit draußen beim Skateboarden oder bei Schlechtwetter auch hinter meinem Rechner. 
+			  Das Skateboarden ist eine meiner Leidenschaften, weswegen ich in Liezen einen Verein zur Förderung des Sports gegründet habe. 
+			  Wir konnten erfolgreich einen dialog mit der Stadt Liezen einleiten den Sport auf lokaler Ebene zu fördern. 
+			  In naher Zukunft soll auch ein neuer Skatepark errichtet werden. Für 1 Jahr habe ich den Verein als Obmann geführt, bevor ich vor meinem Umzug nach Linz die Position übergeben habe.
             </p>
           </div>
         </div>
-      </div>
+      </div> 
     </div>
-    </section><!-- /About Section -->
 
+	 <!--CAROUSEL -->
+	  <div class="row carousel-row">
+		  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+			  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+			  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			</div>
+
+			<div class="carousel-inner">
+			  <!-- Slide 1 -->
+			  <div class="carousel-item active">
+				<div class="d-flex">
+				  <img src="assets/images/header/Grimming_panorama.jpg" class="d-block w-50" alt="...">
+				  <img src="assets/images/header/Grimming_panorama.jpg" class="d-block w-50" alt="...">
+				</div>
+			  </div>
+			  <!-- Slide 2 -->
+			  <div class="carousel-item">
+				<div class="d-flex">
+				  <img src="assets/images/header/Grimming_panorama.jpg" class="d-block w-50" alt="...">
+				  <img src="assets/images/header/Grimming_panorama.jpg" class="d-block w-50" alt="...">
+				</div>
+			  </div>
+			  <!-- Slide 3 -->
+			  <div class="carousel-item">
+				<div class="d-flex">
+				  <img src="assets/images/header/Grimming_panorama.jpg" class="d-block w-50" alt="...">
+				  <img src="assets/images/header/Grimming_panorama.jpg" class="d-block w-50" alt="...">
+				</div>
+			  </div>
+			</div>
+
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+			  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			  <span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+			  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			  <span class="visually-hidden">Next</span>
+			</button>
+		  </div>
+		</div>	  
+    </section><!-- /About Section -->
     <!-- Skills Section -->
     <section id="skills" class="skills section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Skills</h2>
-        <p> Während meiner Zeit bei <a href="https://ruhdorfer.design" target="_blank">ruhdorfer* branding & web</a> durfte ich viele Aufgabenbereiche abdecken. Meine Arbeit fokussierte sich hauptsächlich auf die Erstellung von Screendesigns mit Adobe XD und deren Umsetzung mithilfe von WordPress. Gelegentlich beschäftigte ich mich mit der Erstellung und Bearbeitung von Bildmaterial genauso wie das Ausarbeiten von Flyern und etwas Videoschnitt.</p>
+        <p> Während meiner Zeit bei <a href="https://ruhdorfer.design" target="_blank">ruhdorfer* branding & web</a>
+		durfte ich viele Aufgabenbereiche abdecken. Meine Arbeit fokussierte sich hauptsächlich auf die Erstellung von Screendesigns mit Adobe XD und deren Umsetzung mithilfe von WordPress.
+		Gelegentlich beschäftigte ich mich mit der Erstellung und Bearbeitung von Bildmaterial genauso wie das Ausarbeiten von Flyern und etwas Videoschnitt.
+		Des Weiteren war ich für die Betreuung unserer Social Media Kanäle verantwortlich.</p>
       </div><!-- End Section Title -->
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+	<!-- SKILLS -->
 
-        <div class="row skills-content skills-animation">
+		<div class="container row gy-4 justify-content-center">
+			<!-- Hexagon 1 -->
+				<div class="col-lg-4 d-flex justify-content-center">
+				  <div class="hex-alt shadow">
+					<i class="bi bi-filetype-html icons"></i>
+				  </div>
+				</div>
 
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Wordpress / CMS</span> <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-          </div>
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>Photoshop</span> <i class="val">65%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Premiere Pro</span> <i class="val">60%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Adobe XD</span> <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Skills Section -->
+			<!-- Hexagon 2 -->
+				<div class="col-lg-4 d-flex justify-content-center">
+				  <div class="hex-alt">
+					 <i class="bi bi-filetype-css icons"></i>
+				  </div>
+				</div>
+			<!-- Hexagon 3 -->
+				<div class="col-lg-4 d-flex justify-content-center">
+				  <div class="hex-alt">
+					<i class="bi bi-wordpress icons"></i>
+				  </div>
+				</div>
+		</div>
+		<!--2nd ROW -->
+		<div class="container row justify-content-center">
+			<!-- Hexagon 1 -->
+				<div class="col-lg-4 d-flex justify-content-center">
+				  <div class="hex-alt">
+					<img class="svg-icon" src="assets/images/icons/adobe-logo.svg">
+				  </div>
+				</div>
+			<!-- Hexagon 1 -->
+				<div class="col-lg-4 d-flex justify-content-center">
+				  <div class="hex-alt">
+					<i class="bi bi-camera icons"></i>
+				  </div>
+				</div>
+		</div>
+	<!-- SKILLS END-->
+    </section>
+	<!-- /Skills Section -->
 
 
     <!-- Portfolio Section -->
@@ -166,7 +218,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
-        <p>Hier finden Sie eine Auswahl an Projekten.</p>
+        <p>Hier finden Sie eine kleine Auswahl an Projekten, die ich selber umgesetzt habe. Aus datenschutzrechtlichen Gründen kann ich nur eine beschränkte Auswahl an Projekten präsentieren.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -207,26 +259,11 @@
     </section><!-- /Portfolio Section -->
 
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Kontakt</h2>
-        <p>Sie können mich gerne telefonisch oder per E-Mail erreichen.</p><br>
-          <div>
-            <ul><i class="bi bi-chevron-right"></i> <strong>Telefon:</strong> <span>+43 676 910 44 78</span></ul>
-            <ul><i class="bi bi-chevron-right"></i> <strong>E-Mail:</strong> <span>maximilian.rakicki@gmail.com</span></ul>
-         </div>
-      </div><!-- End Section Title -->
-
-    </section><!-- /Contact Section -->
-
   </main>
 
-  <footer id="footer" class="footer position-relative light-background">
-
-  </footer>
+  <!--<footer id="footer" class="footer position-relative light-background">
+		
+  </footer>>
 
     <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
@@ -243,5 +280,21 @@
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+	
+	<!-- SCRIPT ANIMATION -->
+	<script>
+// Select all the hexagon elements
+const hexagons = document.querySelectorAll('.hex-alt');
+
+// Apply a random delay and direction to each hexagon
+hexagons.forEach(hex => {
+  const randomDelay = Math.random() * 2; // Random delay between 0 and 2 seconds
+  const randomDirection = Math.random() < 0.5 ? -5 : 5; // Randomly pick direction: -5deg (left) or 5deg (right)
+
+  // Set the animation delay and the rotation direction
+  hex.style.animationDelay = `${randomDelay}s`;
+  hex.style.setProperty('--rotation-direction', `${randomDirection}deg`); // Use a custom CSS property for rotation direction
+});
+	</script>
 </body>
 </html>

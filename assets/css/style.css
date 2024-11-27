@@ -177,14 +177,15 @@ h6 {
 
 .navmenu ul {
   list-style: none;
-  padding: 0 0 20px 0;
+  padding: 0 0 0 0;
   margin: 0;
 }
 
 .navmenu a,
 .navmenu a:focus {
   color: var(--nav-color);
-  padding: 15px 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
   font-family: var(--nav-font);
   font-size: 16px;
   font-weight: 400;
@@ -420,7 +421,7 @@ h6 {
 section,
 .section {
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-color: #f4fafd;
   padding: 60px 0;
   overflow: clip;
 }
@@ -454,6 +455,27 @@ section,
 
 .section-title p {
   margin-bottom: 0;
+}
+/*Footer contact style*/
+.section-title-footer {
+  position: relative;
+}
+.section-title-footer h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.section-title-footer h2:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--accent-color);
+  left: 0;
+  bottom: 0;
 }
 
 /*--------------------------------------------------------------
@@ -1008,56 +1030,6 @@ section,
   color: var(--contrast-color);
 }
 
-.contact .php-email-form {
-  background-color: var(--surface-color);
-  height: 100%;
-  padding: 30px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-}
-
-@media (max-width: 575px) {
-  .contact .php-email-form {
-    padding: 20px;
-  }
-}
-
-.contact .php-email-form input[type=text],
-.contact .php-email-form input[type=email],
-.contact .php-email-form textarea {
-  font-size: 14px;
-  padding: 10px 15px;
-  box-shadow: none;
-  border-radius: 0;
-  color: var(--default-color);
-  background-color: var(--surface-color);
-  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
-}
-
-.contact .php-email-form input[type=text]:focus,
-.contact .php-email-form input[type=email]:focus,
-.contact .php-email-form textarea:focus {
-  border-color: var(--accent-color);
-}
-
-.contact .php-email-form input[type=text]::placeholder,
-.contact .php-email-form input[type=email]::placeholder,
-.contact .php-email-form textarea::placeholder {
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
-}
-
-.contact .php-email-form button[type=submit] {
-  color: var(--contrast-color);
-  background: var(--accent-color);
-  border: 0;
-  padding: 10px 30px;
-  transition: 0.4s;
-  border-radius: 50px;
-}
-
-.contact .php-email-form button[type=submit]:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 25%);
-}
-
 /*--------------------------------------------------------------
 # Portfolio Details Section
 --------------------------------------------------------------*/
@@ -1189,4 +1161,124 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+
+
+/* Container to hold the hexagons */
+.hexagon-container {
+  margin: 0;
+  min-height: 100vh;
+  place-content: center;
+  place-items: center;
+  gap: 50px;
+  perspective: 1500px; /* depth perspective */
+}
+
+/* Hexagon styling */
+.hex-alt {
+  height: 250px;
+  width: 250px;
+  clip-path: polygon(-50% 50%, 50% 100%, 150% 50%, 50% 0);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #229ad3; /* background color */
+  animation: idleRotation 4s infinite ease-in-out; /* idle rotation animation */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out; /* Smooth transition for scaling */
+  /* Use the custom property for rotation direction */
+  --rotation-direction: 5deg; /* Default rotation direction */
+}
+
+/* Idle rotation animation */
+@keyframes idleRotation {
+  0% {
+    transform: rotate(0deg); /* Start from the default position */
+  }
+  50% {
+    transform: rotate(var(--rotation-direction)); /* Rotate randomly based on the custom direction */
+  }
+  100% {
+    transform: rotate(0deg); /* Return to the original position */
+  }
+}
+
+/* random delays for hexagons */
+.hex-alt:nth-child(1) {
+  animation-delay: 0s; /* Starts immediately */
+}
+.hex-alt:nth-child(2) {
+  animation-delay: 0.5s; /* Starts half a second later */
+}
+.hex-alt:nth-child(3) {
+  animation-delay: 1s; /* Starts 1 second later */
+}
+.hex-alt:nth-child(4) {
+  animation-delay: 1.5s; /* Starts 1.5 seconds later */
+}
+
+/*icons*/
+.icons{
+	font-size:120px;
+	color: #ffffff;
+}
+/*icons svg*/
+.svg-icon{
+	height:220px;
+}
+
+/*background gradient*/
+.bg-pan-top {
+  background: linear-gradient(to bottom, #229ad3, #8ea8c0, #5a7994); /* Gradient background */
+  background-size: 200% 200%; /* Make the gradient larger than the viewport */
+  animation: bg-pan-top 4s ease-in-out infinite alternate; /* Use 'alternate' for smooth looping */
+}
+
+@keyframes bg-pan-top {
+  0% {
+    background-position: 50% 100%; /* Start from the bottom */
+  }
+  100% {
+    background-position: 50% 0%; /* Move to the top */
+  }
+}
+
+/*rotate*/
+.rotate{
+	transform: rotate(-90deg);
+	flex-direction: row-reverse;
+}
+/*Buttons nav menu*/
+.btn-light {
+  transition: all 0.3s ease-in-out;  /* Smooth transition for all properties */
+  background-color: #229ad3;         /* Light background color */
+  color: #ffffff;                       /* Text color */
+  padding: 10px 20px;                 /* Padding */
+  font-size: 16px;                   /* Font size */
+  display: flex;                     /* Flexbox for aligning the icon and text */
+  align-items: center;               /* Center icon and text vertically */
+  border: 1px solid transparent;
+  width: 100%;
+  justify-content: center;
+}
+
+/* Hover effect for the phone button */
+.phone-btn:hover {
+  background-color: #ffffff;         /* white background */
+  transform: scale(1.1);
+  border: 2px solid #229ad3;  /* Scale the button slightly */
+}
+
+/* Hover effect for the email button */
+.email-btn:hover {
+  background-color: #ffffff;         /* white background */
+  transform: scale(1.1);              /* Scale the button slightly */
+  border: 2px solid #229ad3;
+}
+
+/* Smooth icon transition */
+.navicon {
+  margin-right: 8px; /* spacing between the icon and the text */
 }
